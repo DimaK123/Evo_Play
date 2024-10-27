@@ -1,0 +1,12 @@
+.wrapper {
+  padding: 0 15px;
+
+  min-width: $phone-width;
+  max-width: $desktop-width;
+
+  margin: 0 auto;
+
+  @include onDesktop {
+    padding: 0 91px;
+  }
+}

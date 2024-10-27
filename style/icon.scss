@@ -1,0 +1,22 @@
+.icon {
+  display: block;
+  width: 53px;
+  height: 35px;
+
+  &--menu {
+    background-image: url(../images/icons/icon-burger-menu.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:hover {
+      background-image: url(../images/icons/icon-burger-menu-open.svg);
+
+      filter: invert(1)
+    }
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+}

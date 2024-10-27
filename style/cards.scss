@@ -1,0 +1,166 @@
+.cards {
+  @include flex-column;
+  gap: 150px;
+
+  @include onDesktop {
+    gap: 3px; 
+
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100vw;
+      height: 684px;
+      background-image: url('../images/services-bg.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--mini {
+    gap: 104px;
+
+    @include onDesktop {
+      gap: 44px;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+
+  @include onDesktop {
+    flex-direction: row;
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  &__block {
+    @include onDesktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      height: 450px;
+      width: 435px;
+    }
+  }
+
+  &__card {
+    position: relative;
+    width: 400px;
+    height: 416px;
+
+    &--mini {
+      width: 334px;
+      height: 228px;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: $second-main-color;
+
+    &--black {
+      background-color: #2C2B2B70;
+      transform: rotate(-$rotateDeg);
+    }
+
+    &--blue {
+      transform: rotate($rotateDeg);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transform: translateY(-80px);
+
+    @include onDesktop {
+      transform: translateY(-52px);
+    }
+
+    &--mini {
+      transform: translateY(-40px);
+
+      @include onDesktop {
+        transform: translateY(-53px);
+      }
+    }
+  }
+
+  &__circle {
+    &--small {
+      @include figure(134px);
+      margin-bottom: 20px;
+
+      @include onDesktop {
+        @include figure(150px);
+
+        margin-bottom: 17px;
+      }
+    }
+
+    &--big {
+      @include figure(218px);
+      margin-bottom: 17px;
+
+      @include onDesktop {
+        @include figure(180px);
+
+        margin-bottom: 26px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    line-height: 44.5px;
+    margin-bottom: 15px;
+
+    &--mini {
+      font-size: 24px;
+      line-height: 38.14px;
+      max-width: 286px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__about {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+
+    width: 324px;
+
+    margin-bottom: 39px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    line-height: 28.6px;
+
+    color: $red-text;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 18px;
+      height: 14px;
+
+      line-height: 28.6px;
+
+      background-image: url(../images/icons/arrow.svg);
+    }
+  }
+}

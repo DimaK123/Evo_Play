@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Mashetic Regular';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Mashetic Regular'), url('../fonts/Mashetic-eZEXm.woff') format('woff');
+  }
+
+* {
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+button {
+  border: none;
+  padding: 0;
+}
+
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/extends';
+@import './wrapper';
+@import './page.scss';
+@import './logo.scss';
+@import './section-title.scss';
+@import './section-about.scss';
+@import './header.scss';
+@import './icon.scss';
+@import './action-button.scss';
+@import './circle.scss';
+@import './cards.scss';
+@import './advantages.scss';
+@import './about-us.scss';
+@import './services.scss';
+@import './contact-us.scss';
+@import './footer.scss';
