@@ -1,0 +1,27 @@
+.logo {
+  display: block;
+  color: #DF3D0F;
+
+  &--small {
+    line-height: 28px;
+
+    width: 134px;
+    height: 29px;
+
+    @include onDesktop {
+      font-size: 26px;
+      line-height: 41.31px;
+  
+      width: 193px;
+      height: 41px;
+    }
+  }
+
+  &--big {
+    font-size: 38px;
+    line-height: 60.38px;
+
+    width: 281px;
+    height: 60px;
+  }
+}

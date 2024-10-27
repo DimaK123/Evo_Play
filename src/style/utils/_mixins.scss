@@ -1,0 +1,36 @@
+@mixin onDesktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin figure($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin grid-center {
+  display: grid;
+  justify-items: center;
+}
+
+@mixin grid-first-column {
+  grid-column: 1 / 2;
+}
+
+@mixin grid-third-column {
+  grid-column: 3 / 4;
+}
+

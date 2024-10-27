@@ -1,0 +1,9 @@
+.section-title {
+  font-size: 28px;
+  line-height: 44.49px;
+  max-width: 400px;
+
+  @include onDesktop {
+    max-width: none;
+  }
+}

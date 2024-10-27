@@ -1,0 +1,57 @@
+.page {
+  font-family: 'Mashetic Regular', Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  
+  background-color: $main-color;
+
+  scroll-behavior: smooth;
+
+ 
+
+
+  &__body {
+    padding-top: 77px;
+  }
+
+  &__header {
+    margin-bottom: 131px;
+
+    @include onDesktop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__main {
+    overflow: hidden;
+  }
+
+  &__about-us {
+    margin-bottom: 259px;
+
+    @include onDesktop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__services {
+    margin-bottom: 242px;
+
+    @include onDesktop {
+      margin-bottom: 215px;
+    }
+  }
+
+  &__contact-us {
+    margin-bottom: 284px;
+
+    @include onDesktop {
+      margin-bottom: 215px;
+    }
+  }
+
+  @include onDesktop {
+    text-align: start;
+  }
+  
+}

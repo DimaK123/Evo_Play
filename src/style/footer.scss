@@ -1,0 +1,150 @@
+.footer {
+  @include flex-column;
+  padding: 119px 0 65px;
+
+  background-color: $section-color;
+
+  @include onDesktop {
+    padding: 86px 83px 72px 91px;
+  }
+
+  &__logo {
+    margin-bottom: 119px;
+
+    @include onDesktop {
+      align-self: flex-start;
+      margin-bottom: 69px;
+    }
+  }
+
+  &__content {
+    @include flex-column;
+    align-items: center;
+
+    @include onDesktop {
+      width: 100%;
+      
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+
+      gap: 97px;
+
+      margin-bottom: 208px;
+    }
+  }
+
+  &__section-title {
+    margin-bottom: 60px;
+    min-width: max-content;
+  }
+
+  &__nav {
+    margin-bottom: 180px;
+
+    @include onDesktop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__links {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+  }
+
+  &__link {
+      &:not(:last-child) {
+      margin-bottom: 42px;
+    }
+  }
+
+  &__contact-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+    text-align: left;
+  }
+
+  &__legal {
+    margin-bottom: 198px;
+
+    @include onDesktop {
+      margin-bottom: 0;
+
+      min-width: max-content;
+    } 
+  }
+
+  &__company-info {
+    @include flex-column;
+
+    margin-bottom: 198px;
+    padding: 0 55px;
+
+    @include onDesktop {
+      width: 321px;
+
+      align-items: baseline;
+      padding: 0;
+
+      margin-bottom: 0;
+    }
+  }
+
+  &__link-icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+  
+
+    &--phone {
+      @include figure(24px);
+      background-image: url(../images/icons/phone.svg);
+    }
+
+    &--mail {
+      width: 21px;
+      height: 15px;
+      background-image: url(../images/icons/mail.svg);
+    }
+
+    &--geo {
+      min-width: 16px;
+      height: 20px;
+      background-image: url(../images/icons/geo.svg);
+      align-self: start;
+    }
+  }
+
+  &__careers {
+    margin-bottom: 364px;
+
+    @include onDesktop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__opportunities {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    max-width: 330px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__invitation {
+    margin-bottom: 28px;
+  }
+
+
+  &__copyright {
+    line-height: 28.6px;
+  }
+}

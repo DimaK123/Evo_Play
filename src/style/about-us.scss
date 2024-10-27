@@ -1,0 +1,87 @@
+.about-us {
+  @include grid-center;
+
+  @include onDesktop {
+    display: grid;
+    grid-template-columns: minmax(515px, 1fr) minmax(109px, 1fr) minmax(628px, 1fr);
+    grid-template-rows: repeat(4, max-content);
+
+    padding-block: 215px;
+
+    justify-items: left;
+  }
+
+  &__section-title {
+    margin-bottom: 11px;
+
+    @include onDesktop {
+      @include grid-third-column;
+      grid-row: 1 / 2;
+
+      font-size: 38px;
+      line-height: 60.38px;
+
+      margin-bottom: 0;
+    }
+  }
+
+  &__section-about {
+    &-1 {
+      @include onDesktop {
+        grid-row: 2 / 3;
+      }
+    }
+
+    &-2 {
+      margin-bottom: 42px;
+
+      @include onDesktop {
+        grid-row: 3 / 4;
+      }
+    }
+
+    @include onDesktop {
+      @include grid-third-column;
+
+      margin-bottom: 23px;
+    }
+  }
+
+  &__square {
+    height: 355px;
+    width: 399px;
+    border-radius: 35px;
+
+    background-color: $figure-color;
+
+    margin: 49px 0;
+
+    @include onDesktop {
+      position: relative;
+      height: 457px;
+      width: 515px;
+
+      @include grid-first-column;
+      grid-row: 1 / -1;
+
+      align-self: flex-start;
+
+      // margin-bottom: 0;
+      margin: 0;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -322px;
+        left: -173px;
+        width: 1021px;
+        height: 1021px;
+        background-image: url('../images/bg-about-us-square.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+      }
+    }
+  }
+}
