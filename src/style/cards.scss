@@ -2,6 +2,8 @@
   @include flex-column;
   gap: 150px;
 
+  width: 100%;
+
   @include onDesktop {
     gap: 3px; 
 
@@ -36,9 +38,10 @@
     justify-content: center;
 
     text-align: center;
-  }
+  } 
 
   &__block {
+    width: calc(100% - $mobile-inline-padding * 2);
     @include onDesktop {
       display: flex;
       justify-content: center;
@@ -51,8 +54,11 @@
 
   &__card {
     position: relative;
-    width: 400px;
     height: 416px;
+
+    @include onDesktop {
+      width: 400px;
+    }
 
     &--mini {
       width: 334px;

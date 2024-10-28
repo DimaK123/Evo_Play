@@ -6,7 +6,8 @@
   "scripts": {
     "sass": "sass src/style/style.scss src/style/style.css --watch",
     "start": "parcel src/index.html",
-    "dev": "npm-run-all --parallel sass start"
+    "dev": "npm-run-all --parallel sass start",
+    "deploy": "git subtree push --prefix src origin gh-pages"
   },
   "keywords": [],
   "author": "",

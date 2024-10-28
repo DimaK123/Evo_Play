@@ -6,7 +6,7 @@
 
     width: 100%;
 
-    padding: 119px 0;
+    padding: 119px 21px;
     margin-bottom: 139px;
 
     background-color: $section-color;
@@ -16,7 +16,7 @@
 
       flex-direction: row;
       align-items: flex-start;
-      justify-content: space-between;
+      gap: 69px;
 
       padding: 0 78px 56px 91px;
       margin-bottom: 152px;
@@ -98,7 +98,7 @@
 
   &__explore {
     @include flex-column;
-    width: 368px;
+    max-width: 368px;
     position: relative;
 
     &::before {
@@ -142,7 +142,10 @@
     }
 
     &--big {
-      @include figure(358px);
+      width: 100%;
+      height: calc(100vw - $mobile-inline-padding * 2);
+      max-width: 358px;
+      max-height: 358px;
 
       margin-bottom: 60px;
 
@@ -152,6 +155,8 @@
         grid-row: 1 / -1;
 
         @include figure(416px);
+        max-width: 416px;
+        max-height: 416px;
 
         justify-self: center;
         align-self: end;
@@ -194,7 +199,8 @@
   &__form {
     display: flex;
     flex-direction: column;
-    width: 391px;
+    max-width: 391px;
+    width: 100%;
 
     gap: 35px;
 
@@ -217,7 +223,7 @@
     &::placeholder {
       line-height: 28.6px;
       color: #FFFFFF;
-    }
+    } 
   }
 
   &__textArea {

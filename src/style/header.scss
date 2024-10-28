@@ -100,14 +100,13 @@
   }
 
   &__image {
-    width: 405px;
+    width: 100%;
     height: 345px;
     margin: 63px 0;
 
     object-fit: contain;
 
     @include onDesktop {
-      width: 100%;
       max-width: 550px;
       height: 470px;
       margin: 0;

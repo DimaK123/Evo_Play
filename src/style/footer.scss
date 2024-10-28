@@ -85,7 +85,8 @@
     @include flex-column;
 
     margin-bottom: 198px;
-    padding: 0 55px;
+    max-width: 321px;
+    // padding: 0 55px;
 
     @include onDesktop {
       width: 321px;

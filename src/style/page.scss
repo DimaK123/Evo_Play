@@ -12,6 +12,10 @@
 
   &__body {
     padding-top: 77px;
+
+    @include onDesktop {
+      padding-top: 55px;
+    }
   }
 
   &__header {
