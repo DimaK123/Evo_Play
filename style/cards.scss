@@ -97,9 +97,7 @@
     &--mini {
       transform: translateY(-40px);
 
-      height: calc(100% + 40px);
       padding-inline: 24px;
-      padding-bottom: 38px;
 
       @include onDesktop {
         transform: translateY(-53px);
