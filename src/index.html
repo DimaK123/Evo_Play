@@ -244,31 +244,29 @@
           </p>
           <div class="circle contact-us__circle contact-us__circle--big"></div>
           <form
-            action="#"
-            method="post"
             class="contact-us__form"
+            id="contactForm"
+            onsubmit="handleFormSubmit(event)"
           >
             <input
               type="text"
               class="contact-us__input"
               placeholder="Name"
+              required
             >
             <input
               type="email"
               class="contact-us__input"
               placeholder="Email"
+              required
             >
             <textarea
               class="contact-us__textArea"
               placeholder="Message"
-              maxlength="150  "
+              maxlength="150"
             ></textarea>
-            <button>
-              <a 
-                href="#"
-                class="action-button action-button--contact-us">
-                Send Message
-              </a>
+            <button class="action-button action-button--contact-us">
+              Send Message
             </button>
           </form>
         </article>
@@ -351,8 +349,10 @@
           </li>
           <li class="footer__link">
             <a
-              href="https://maps.app.goo.gl/713HrPTPQaX1poTc7" class="footer__contact-link"
-              >
+              href="https://maps.app.goo.gl/713HrPTPQaX1poTc7"
+              class="footer__contact-link"
+              target="_blank"
+            >
               <div class="footer__link-icon footer__link-icon--geo"></div>
               123 Cyber Lane, Tech City, IN 46000, United States
             </a>
@@ -379,6 +379,5 @@
       © 2024 Secure Nexus. All rights reserved.
     </p>
   </footer>
-  <script src="js/main.min.js"></script>
 </body>
 </html>
