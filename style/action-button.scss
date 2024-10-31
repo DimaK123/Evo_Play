@@ -7,10 +7,12 @@
 
   background: linear-gradient(to right, #3B34A1, #E1400F);  
 
-  &:hover {
-    background: $main-color;
-    border: 1px solid;
-    border-image: linear-gradient(to right, #3B34A1, #E1400F) 1;
+  @include onDesktop {
+    &:hover {
+      background: $main-color;
+      border: 1px solid;
+      border-image: linear-gradient(to right, #3B34A1, #E1400F) 1;
+    }
   }
 
   &--nav {

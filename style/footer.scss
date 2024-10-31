@@ -57,7 +57,11 @@
   }
 
   &__link {
-      &:not(:last-child) {
+    & a:hover {
+      color: $red-text;
+    }
+
+    &:not(:last-of-type) {
       margin-bottom: 42px;
     }
   }
@@ -86,7 +90,6 @@
 
     margin-bottom: 198px;
     max-width: 321px;
-    // padding: 0 55px;
 
     @include onDesktop {
       width: 321px;
@@ -142,6 +145,10 @@
 
   &__invitation {
     margin-bottom: 28px;
+
+    &:hover {
+      color: $red-text;
+    }
   }
 
 
