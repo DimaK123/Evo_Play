@@ -84,7 +84,7 @@
   }
 
   &__picture {
-    background-image: url('../images/header-background.png');
+    background-image: url('../images/header-background.avif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 105%;
@@ -95,7 +95,7 @@
       align-self: flex-end;
       justify-content: center; // залишив властивість на випадок, якщо потрібно буде прибрати обмеження по ширині контенут на десктопі, щоб вона центрувалась у комірці.
 
-      background-image: url('../images/header-background-big.png');
+      background-image: url('../images/header-background-big.avif');
     }
   }
 

@@ -17,14 +17,14 @@
 
   &--nav {
     width: 143px;
-    height: 35px;
+    min-height: 35px;
 
     font-size: 12px;
     line-height: 19.07px;
 
     @include onDesktop {
       width: 177px;
-      height: 39px;
+      min-height: 39px;
 
       font-size: 14px;
       line-height: 22.5px;
@@ -33,7 +33,7 @@
 
   &--header {
     width: 292px;
-    height: 73px;
+    min-height: 73px;
 
     font-size: 24px;
     line-height: 38.14px;
@@ -41,7 +41,7 @@
 
   &--about {
     width: 199px;
-    height: 52px;
+    min-height: 52px;
 
     font-size: 18px;
     line-height: 28.6px;
@@ -53,7 +53,7 @@
   }
 
   &--contact-us {
-    height: 62px;
+    min-height: 62px;
     border: none;
   }
 }
